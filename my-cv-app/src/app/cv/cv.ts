@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+export class CvComponent{}
 
 @Component({
   selector: 'app-cv',
