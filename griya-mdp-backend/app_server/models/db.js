@@ -1,5 +1,5 @@
 let mongoose = require("mongoose");
-let dbURI = "mongodb+srv://paw2:si@paw2.iendmj6.mongodb.net/PAWII-SI?retryWrites=true&w=majority&appName=paw2";
+let dbURI = "mongodb+srv://admin:<db_password>@cluster0.p4gdc1u.mongodb.net/?appName=Cluster0";
 
 mongoose.connect(dbURI,{
     //useNewURLParser: true
