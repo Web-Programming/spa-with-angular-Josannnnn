@@ -6,7 +6,7 @@
         <h1 class="display-4 fw-bold mb-3">Perumahan Impian Semua Insan</h1>
         <p class="lead mb-4">
           Temukan rumah idaman Anda dengan lokasi strategis, fasilitas lengkap, 
-          dan harga terjangkau.
+          dan harga terjangkau. Griya MDP hadir untuk mewujudkan hunian impian keluarga Indonesia.
         </p>
         <div class="d-flex gap-3">
           <a href="#properties" class="btn btn-light btn-lg">
@@ -16,7 +16,8 @@
       </div>
       <div class="col-lg-6">
         <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop" 
-            alt="Perumahan Modern" class="img-fluid rounded shadow-lg">
+             alt="Perumahan Modern" 
+             class="img-fluid rounded shadow-lg">
       </div>
     </div>
   </div>
@@ -32,7 +33,6 @@
       </div>
     </div>
     <div class="row g-4">
-      <!-- Feature Card 1 -->
       <div class="col-md-4">
         <div class="card border-0 shadow-sm h-100 text-center p-4">
           <div class="card-body">
@@ -46,7 +46,32 @@
           </div>
         </div>
       </div>
-      <!-- Feature Card 2 & 3... -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <div class="card-body">
+            <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex p-3 mb-3">
+              <i class="bi bi-shield-check text-white fs-1"></i>
+            </div>
+            <h5 class="card-title fw-bold">Legalitas Lengkap</h5>
+            <p class="card-text text-muted">
+              Semua properti memiliki sertifikat lengkap dan terjamin keamanannya
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 text-center p-4">
+          <div class="card-body">
+            <div class="bg-warning bg-opacity-10 rounded-circle d-inline-flex p-3 mb-3">
+              <i class="bi bi-cash-coin text-white fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">Harga Terjangkau</h5>
+            <p class="card-text text-muted">
+              Berbagai pilihan dengan skema pembayaran yang fleksibel dan kompetitif
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -57,9 +82,8 @@
     <div class="row mb-4">
       <div class="col-lg-12 text-center">
         <h2 class="fw-bold mb-3">Pilihan Hunian Terbaik</h2>
-        <p class="text-muted mb-4">Jelajahi berbagai pilihan properti berkualitas</p>
-        
-        <!-- Filter Buttons -->
+        <p class="text-muted mb-4">Jelajahi berbagai pilihan properti berkualitas dengan fasilitas modern</p>
+        <!-- Filter/Sort Options -->
         <div class="d-flex justify-content-center gap-3 mb-4 flex-wrap">
           <button class="btn btn-outline-primary active">
             <i class="bi bi-grid-3x3-gap me-2"></i>Semua
@@ -70,6 +94,9 @@
           <button class="btn btn-outline-primary">
             <i class="bi bi-building me-2"></i>Apartemen
           </button>
+          <button class="btn btn-outline-primary">
+            <i class="bi bi-tree me-2"></i>Villa
+          </button>
         </div>
       </div>
     </div>
@@ -79,7 +106,12 @@
       <div class="col-md-6 col-lg-4">
         <app-lokasi-perumahan></app-lokasi-perumahan>
       </div>
-      <!-- Implementasi selanjutnya :  menampilkan lokasi-perumahan dari list -->
+      <div class="col-md-6 col-lg-4">
+        <app-lokasi-perumahan></app-lokasi-perumahan>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <app-lokasi-perumahan></app-lokasi-perumahan>
+      </div>
     </div>
 
     <!-- Load More Button -->
@@ -99,7 +131,7 @@
     <div class="row align-items-center">
       <div class="col-lg-8 mb-3 mb-lg-0 text-center text-lg-start">
         <h3 class="fw-bold mb-2">Siap Menemukan Rumah Impian Anda?</h3>
-        <p class="mb-0">Hubungi kami sekarang dan dapatkan penawaran terbaik</p>
+        <p class="mb-0">Hubungi kami sekarang dan dapatkan penawaran terbaik untuk properti pilihan Anda</p>
       </div>
       <div class="col-lg-4 text-center text-lg-end">
         <a routerLink="/contact" class="btn btn-light btn-lg">
