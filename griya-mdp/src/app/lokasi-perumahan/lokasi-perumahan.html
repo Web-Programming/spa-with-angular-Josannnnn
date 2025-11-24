@@ -1,10 +1,13 @@
 <div class="card h-100 shadow-sm border-0 overflow-hidden">
   <!-- Property Image -->
   <div class="position-relative">
-    <!-- nampilkan data dinamis gunakan tanda [] -->
-    <img [src]="housing.image" class="card-img-top" [alt]="housing.title" style="height: 250px; object-fit: cover;">
+    <img [src]="housing.image" 
+         class="card-img-top" 
+         [alt]="housing.title"
+         style="height: 250px; object-fit: cover;">
     <!-- Badge -->
-    <span class="position-absolute top-0 start-0 m-3 badge" [ngClass]="{
+    <span class="position-absolute top-0 start-0 m-3 badge"
+          [ngClass]="{
             'bg-success': housing.status === 'Available',
             'bg-warning': housing.status === 'Pending',
             'bg-secondary': housing.status === 'Sold'
@@ -46,8 +49,7 @@
 
     <!-- Description -->
     <p class="card-text text-muted small mb-3">
-      {{ housing.description || 'Hunian modern dengan desain minimalis, dilengkapi fasilitas lengkap dan akses mudah ke
-      berbagai tempat strategis.' }}
+      {{ housing.description || 'Hunian modern dengan desain minimalis, dilengkapi fasilitas lengkap dan akses mudah ke berbagai tempat strategis.' }}
     </p>
 
     <!-- Action Buttons -->
