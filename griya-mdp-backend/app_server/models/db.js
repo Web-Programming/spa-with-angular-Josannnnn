@@ -1,5 +1,5 @@
 let mongoose = require("mongoose");
-let dbURI = "mongodb://localhost:27017/pawII-si5c";
+let dbURI = "mongodb://localhost:27017/griya-mdp";
 
 mongoose.connect(dbURI,{
     //useNewURLParser: true
@@ -17,3 +17,6 @@ mongoose.connection.on("disconected", () => {
     console.log("Disconnected From MongoDB");
 });
 
+// Load models
+require("./user");
+require("./housing");
